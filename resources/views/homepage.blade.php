@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <title>Album example for Bootstrap</title>
 
-  <link rel="icon" href="../../../../favicon.ico">
+  <!-- <link rel="icon" href="../../../../favicon.ico"> -->
   <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 </head>
 
