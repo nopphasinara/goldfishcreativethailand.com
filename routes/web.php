@@ -11,14 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/{pagename}', function ($pagename) {
+  Route::current()->name('page-'. $pagename);
+  return (View::exists($pagename)) ? view($pagename) : abort(404);
 });
 
-Route::get('{pagename}', function ($pagename) {
-  return view($pagename)->abort(404);
+Route::get('/', function () {
+    return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// Route::resource('photos', 'PhotoController')->only([
+//     'index', 'show'
+// ]);
+//
+// Route::resource('photos', 'PhotoController')->except([
+//     'create', 'store', 'update', 'destroy'
+// ]);
