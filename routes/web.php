@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/{pagename}', function ($pagename) {
+Route::('/{pagename}', function ($pagename) {
   Route::current()->name('page-'. $pagename);
   return (View::exists($pagename)) ? view($pagename) : abort(404);
-});
+})->name('page');
 
 Route::get('/', function () {
     return view('welcome');
