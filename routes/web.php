@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('{pagename}', function ($pagename) {
+  return view($pagename)->abort(404);
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
