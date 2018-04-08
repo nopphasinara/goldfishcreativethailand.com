@@ -1,51 +1,15 @@
 // main: ./app.scss
 
-html,
 body {
   font-size: 14px;
 }
 
 a {
-  cursor: pointer;
-
   &:hover {
     text-decoration: none;
   }
 }
 
-p {
-
-}
-
-b,
-strong,
-.font-weight-bold {
+strong, b, .strong, .bold {
   font-weight: bold;
-}
-
-.carousel {
-  &#homepage-slide {
-    .carousel-item {
-      height: 660px;
-    }
-  }
-
-  .carousel-indicators {
-    > li {
-      cursor: pointer;
-    }
-
-    &.circle {
-      > li {
-        width: 16px;
-        height: 16px;
-        border-radius: 1em;
-      }
-    }
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    cursor: pointer;
-  }
 }

@@ -1,8 +1,8 @@
-// compileCompressed: ../../../public/css/$1.css, precision: 3
+// compileExpanded: ../../../public/css/app.css
+// precision: 3
 
-// Variables
-@import "./_variables.scss";
-// Bootstrap
+@import './_functions.scss';
+@import './_variables.scss';
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-// Hacking Bootstrap
+
 @import './_hack.scss';

@@ -1,9 +1,7 @@
 <?php
 
 return [
-  'name' => 'Goldfish Creative Thailand',
-  'company_name' => 'Goldfish Creative Thailand',
-  'phone' => '+6680-641-1660',
-  'email' => 'nopphasin.arayasirikul@gmail.com',
-  'website' => 'goldfishcreativethailand.com',
+  'site_name' => 'Goldfish Creative Thailand',
+  'tag_line' => 'XXX',
+  'primary_email' => 'goldfishcreative.thailand@gmail.com',
 ];
