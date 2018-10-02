@@ -1,0 +1,10 @@
+// compileExpanded: ../../public/css/$1.css
+
+// Bootstrap
+@import '../vendors/bootstrap/scss/bootstrap.scss';
+
+
+body {
+  color: $body-color;
+  background-color: $body-bg;
+}
