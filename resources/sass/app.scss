@@ -8,3 +8,15 @@ body {
   color: $body-color;
   background-color: $body-bg;
 }
+
+.footer-section {
+  .footer-top {
+    color: $white;
+    background-color: $primary;
+  }
+
+  .footer-bottom {
+    color: $body-color;
+    background-color: $light;
+  }
+}
