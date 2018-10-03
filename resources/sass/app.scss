@@ -4,11 +4,58 @@
 @import '../vendors/bootstrap/scss/bootstrap.scss';
 
 
+$header-logo-height: 30px;
+
+
 body {
   color: $body-color;
   background-color: $body-bg;
 }
 
+
+/* HEADER */
+.header-section {
+  .header-logo {
+    max-height: $header-logo-height;
+
+    img {
+      width: auto;
+      height: $header-logo-height;
+    }
+  }
+
+  .header-usermenu {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .header-menu-main {
+    font-size: 1.1em;
+
+    .menu-main {
+      > .nav-item {
+        > .nav-link {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      top: 100%;
+      left: 0;
+      margin-top: -1px;
+
+      .dropdown-item {
+        font-size: .92em;
+      }
+    }
+  }
+}
+
+
+/* FOOTER */
 .footer-section {
   .footer-top {
     color: $white;
