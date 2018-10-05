@@ -11,10 +11,102 @@
 
   <link href="{{ asset('css/app.css') }}" rel="stylesheet" crossorigin="anonymous">
   <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" crossorigin="anonymous">
+
+  <style media="screen">
+    /** Base structure*/
+    html, body {
+      height: 100%;
+      background-color: #fff;
+    }
+
+    body {
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .cover-heading {
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    }
+
+    .cover-container {
+      max-width: 56em;
+    }
+
+    /** Header*/
+    .masthead {
+      margin-bottom: 2rem;
+    }
+
+    .masthead-brand {
+      margin-bottom: 0;
+    }
+
+    .nav-masthead .nav-link {
+      padding: .25rem 0;
+      font-weight: 700;
+      color: rgba(255, 255, 255, .5);
+      background-color: transparent;
+      border-bottom: .25rem solid transparent;
+    }
+
+    .nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
+      border-bottom-color: rgba(255, 255, 255, .25);
+    }
+
+    .nav-masthead .nav-link+.nav-link {
+      margin-left: 1rem;
+    }
+
+    .nav-masthead .active {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+
+    @media (min-width: 62em) {
+      .masthead-brand {
+        float: left;
+      }
+
+      .nav-masthead {
+        float: right;
+      }
+    }
+
+    /** Cover*/
+    .cover {
+      padding: 0 1.5rem;
+    }
+
+    .cover-container .cover.inner {
+      width: 720px;
+      height: 450px;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, .32);
+    }
+  </style>
 </head>
 <body>
 
-  <div class="header-section">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner"></div>
+    </header>
+
+    <main role="main" class="inner cover bg-light d-flex align-items-center rounded">
+      <div class="text-center">
+        <h1 class="cover-heading display-4 font-weight-bold">We’ll be back soon!</h1>
+        <p class="lead">Sorry for the inconvenience but we’re performing some maintenance at the moment. If you need to you can always send us a message at <a href="mailto:info@goldfishcreativethailand.com">info@goldfishcreativethailand.com</a>, otherwise we’ll be back online shortly!</p>
+        <p class="lead text-secondary">
+          — Goldfish Creative Thailand —
+        </p>
+      </div>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner"></div>
+    </footer>
+  </div>
+
+  {{-- <div class="header-section">
     <div class="header-top bg-secondary text-white d-none">
       <div class="container">
         <div class="topbar d-none d-md-block d-md-flex py-2">
@@ -158,7 +250,7 @@
     <!-- /.footer-bottom -->
 
   </div>
-  <!-- /.footer-section -->
+  <!-- /.footer-section --> --}}
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
   <script src="{{ asset('js/popper.min.js') }}" crossorigin="anonymous"></script>
