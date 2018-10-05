@@ -29,7 +29,7 @@
     }
 
     .cover-container {
-      max-width: 56em;
+      max-width: 64em;
     }
 
     /** Header*/
@@ -62,7 +62,7 @@
       border-bottom-color: #fff;
     }
 
-    @media (min-width: 62em) {
+    @media (min-width: 70em) {
       .masthead-brand {
         float: left;
       }
@@ -78,9 +78,14 @@
     }
 
     .cover-container .cover.inner {
-      width: 720px;
-      height: 450px;
-      box-shadow: 0 0 1rem rgba(0, 0, 0, .32);
+      width: 784px;
+      height: 490px;
+      box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+      background-color: rgba(0, 0, 0, .3);
+    }
+
+    .box-phone {
+      box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
     }
   </style>
 </head>
@@ -93,10 +98,17 @@
 
     <main role="main" class="inner cover bg-light d-flex align-items-center rounded">
       <div class="text-center">
-        <h1 class="cover-heading display-4 font-weight-bold">We’ll be back soon!</h1>
-        <p class="lead">Sorry for the inconvenience but we’re performing some maintenance at the moment. If you need to you can always send us a message at <a href="mailto:info@goldfishcreativethailand.com">info@goldfishcreativethailand.com</a>, otherwise we’ll be back online shortly!</p>
-        <p class="lead text-secondary">
-          — Goldfish Creative Thailand —
+        <h1 class="cover-heading display-4 font-weight-bold my-0 mb-4">We'll be back soon!</h1>
+        <p class="lead">
+          Sorry for the inconvenience but we're performing some maintenance at the moment.
+          <br>
+          You can always send us a message at <a href="mailto:info@goldfishcreativethailand.com">info@goldfishcreativethailand.com</a>.
+          <br><br>
+          <span class="text-secondary">— Goldfish Creative Thailand —</span>
+        </p>
+
+        <p class="box-phone h3 font-weight-normal d-inline-block bg-primary text-white px-3 py-2 rounded">
+          <i class="fa fa-phone"></i> +6680-641-1660
         </p>
       </div>
     </main>
