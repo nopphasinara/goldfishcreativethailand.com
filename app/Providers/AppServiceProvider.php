@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Load helper files.
+        include(app_path('Helpers/Listing.php'));
     }
 
     /**

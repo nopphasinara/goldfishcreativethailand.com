@@ -2,3 +2,18 @@
 
 // Bootstrap
 @import '../vendor/bootstrap/scss/bootstrap.scss';
+
+
+#myCarousel {
+  background-color: $dark;
+
+  .carousel-inner {
+    .carousel-item {
+      height: 600px;
+
+      img {
+        // height: 100%;
+      }
+    }
+  }
+}
