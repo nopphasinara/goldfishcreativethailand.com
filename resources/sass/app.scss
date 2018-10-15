@@ -9,10 +9,23 @@
 
   .carousel-inner {
     .carousel-item {
-      height: 600px;
-
       img {
         // height: 100%;
+      }
+    }
+  }
+}
+
+
+.menu-main {
+  .navbar-nav {
+    > .nav-item {
+      > .nav-link {
+        @extend .px-4;
+        @extend .py-3;
+        font-size: $font-size-base * 1.2;
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
       }
     }
   }

@@ -11,7 +11,16 @@
 |
 */
 
-Route::get('/{page_slug?}', 'Listing\PageController@getPageBySlug');
+Route::get('/admin/{page_slug?}', 'Listing\AdminPageController@getPageBySlug');
+
+Route::get('/{page_slug?}', 'Listing\PageController@getPageBySlug')
+      ->where([
+        'page_slug' => '!^(admin)',
+      ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 

@@ -9,93 +9,21 @@
 
   <title>Hello, world!</title>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}" crossorigin="anonymous">
 </head>
 <body>
   <div id="header-section" class="header-section">
 
-    <div class="header-topbar bg-light py-2">
-      <div class="container">
-        <div class="row d-flex flex-row align-items-start justify-content-md-between">
-          <div class="col-md-auto">
-            <i class="fa fa-phone"></i> Call Us +6680-123-45678
-          </div>
-          <div class="col-md-auto">
-            <ul class="list-inline my-0">
-              <li class="list-inline-item"><a href="#">Menu</a></li>
-              <li class="list-inline-item"><a href="#">Menu</a></li>
-              <li class="list-inline-item"><a href="#">Menu</a></li>
-              <li class="list-inline-item"><a href="#" class="btn btn-primary"><i class="fa fa-user mr-1"></i> Button</a></li>
-            </ul>
-          </div>
-        </div>
-      </div><!-- / .container -->
+    <div class="header-topbar">
+      header-topbar
     </div><!-- / .header-topbar -->
 
-    <div class="header-top py-4">
-      <div class="container">
-        <div class="row d-flex flex-row align-items-start justify-content-md-between">
-          <div class="col-md-auto">
-            <a href="#">
-              <img data-src="holder.js/300x110?auto=yes&random=no&text=LOGO" alt="">
-            </a>
-          </div>
-          <div class="col-md-auto">
-            xxx
-          </div>
-        </div>
-      </div><!-- / .container -->
+    <div class="header-top">
+      header-top
     </div><!-- / .header-top -->
 
-    <div class="header-bottom bg-success py-3 py-md-0">
-      <div class="container">
-        <div class="row d-flex flex-row align-items-center justify-content-between">
-          <div class="col-md-auto mb-3 mb-md-0">
-            <nav class="menu-main navbar navbar-expand-lg navbar-dark p-0">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item active bg-dark">
-                    <a class="nav-link" href="#"><i class="fa fa-home mr-1"></i> Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown link
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </nav><!-- / .menu-main -->
-          </div>
-
-          <div class="col-md-auto">
-            <form action="" method="GET" id="formHeaderSearch" class="formHeaderSearch">
-              <div class="row no-gutters d-flex flex-row align-items-center">
-                <div class="col-md-auto mr-md-2 mb-2 mb-md-0">
-                  <input class="form-control form-control-lg border-success" type="search" placeholder="Title, ID, Keywords..." aria-label="Search">
-                </div>
-                <div class="col-md-auto">
-                  <button class="btn btn-lg btn-dark w-100" type="submit"><i class="fa fa-search"></i></button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div><!-- / .container -->
+    <div class="header-bottom">
+      header-bottom
     </div><!-- / .header-bottom -->
 
   </div><!-- / .header-section -->
@@ -110,7 +38,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="first-slide" data-src="holder.js/100px720?auto=yes&random=yes" alt="First slide">
+          <img class="first-slide" data-src="holder.js/100px600?auto=yes&random=yes" alt="First slide">
           <div class="container">
             <div class="carousel-caption text-left">
               <h1>Example headline.</h1>
@@ -120,7 +48,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="second-slide" data-src="holder.js/100px720?auto=yes&random=yes" alt="Second slide">
+          <img class="second-slide" data-src="holder.js/100px600?auto=yes&random=yes" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -130,7 +58,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="third-slide" data-src="holder.js/100px720?auto=yes&random=yes" alt="Third slide">
+          <img class="third-slide" data-src="holder.js/100px600?auto=yes&random=yes" alt="Third slide">
           <div class="container">
             <div class="carousel-caption text-right">
               <h1>One more for good measure.</h1>
@@ -156,33 +84,8 @@
 
     <div class="content py-5">
       <div class="container">
-        <h2 class="h1 text-uppercase"><strong>Featured Listings</strong></h2>
-        <hr>
-        <div class="row d-flex flex-row align-items-start mt-4">
-          <div class="col-12">
-            <div class="card-deck">
-              <div class="row d-flex flex-row align-items-center">
-                @for ($i = 0; $i < 6; $i++)
-                  <div class="col-12 col-sm-6 col-md-4 mb-5">
-                    <div class="card border-0">
-                      <img class="card-img-top" data-src="holder.js/100px240?auto=yes&random=yes&text=Image" alt="Card image cap">
-                      <div class="card-body px-0">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                      <div class="card-footer bg-white border-top-0 px-0">
-                        <p class="my-0 text-muted">Last updated 3 mins ago</p>
-                      </div>
-                    </div>
-                  </div>
-                @endfor
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row d-flex flex-row align-items-start mt-5">
-          <div class="col-md-9">
+        <div class="row d-flex flex-row align-items-start">
+          <div class="col">
             <h2>Share Our 20 Year Passion for Art</h2>
             <p>At reproduction-gallery.com we have a passion for fine art and take pride in creating museum quality oil paintings. When your order is received it is assigned to an artist who excels in his or her chosen genre. This means that the artist understands the palette and technique required to complete a particular canvas. It is this meticulous attention to detail and the expertise of our artists, which sets us apart from the 'factory' style on-line galleries that crowd the net. We do not aim to be the largest or the cheapest, but we always strive to be the best.</p>
 
@@ -197,9 +100,6 @@
 
             <p>We have ongoing relationships with interior designers, art consultants and film-set designers all of whom trust us to provide them and their clients with the highest standard of work.</p>
           </div>
-          <div class="col-md-3">
-            Sidebar
-          </div>
         </div>
       </div><!-- / .container -->
     </div><!-- / .content -->
@@ -208,16 +108,13 @@
 
   <div id="footer-section" class="footer-section">
 
-    <div class="footer-top bg-info py-5">
+    <div class="footer-top bg-info py-4">
       <div class="container">
-        <div class="row d-flex flex-row align-items-center justify-content-md-between">
-          <div class="col-md text-center text-md-left">
-            <p class="lead my-md-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Integer posuere erat a ante.
+        <div class="row d-flex flex-row align-items-center">
+          <div class="col text-center">
+            <p class="lead my-0">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Integer posuere erat a ante. <a class="btn btn-primary" href="#" role="button">Call Us Now</a>
             </p>
-          </div>
-          <div class="col-md-auto text-center text-md-left">
-            <a class="btn btn-lg btn-primary text-uppercase" href="#" role="button"><strong>Call Us Now</strong></a>
           </div>
         </div>
       </div><!-- / .container -->
